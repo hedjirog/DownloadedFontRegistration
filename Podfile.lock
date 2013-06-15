@@ -1,0 +1,13 @@
+PODS:
+  - AFNetworking (1.3.0)
+  - SSZipArchive (0.2.3)
+
+DEPENDENCIES:
+  - AFNetworking (= 1.3.0)
+  - SSZipArchive (= 0.2.3)
+
+SPEC CHECKSUMS:
+  AFNetworking: e528f20d06b1b818c3571266fb5efa20031a8ace
+  SSZipArchive: 737bef17f4cc07dffd75df628374cff71ec36359
+
+COCOAPODS: 0.20.2
