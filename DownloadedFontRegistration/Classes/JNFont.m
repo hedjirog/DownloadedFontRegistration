@@ -9,8 +9,6 @@
 #import "JNFont.h"
 #import <CoreText/CoreText.h>
 
-#import "UIFont+Additions.h"
-
 @implementation JNFont
 
 - (id)initWithDictionary:(NSDictionary *)dictionary
