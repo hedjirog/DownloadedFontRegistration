@@ -11,6 +11,8 @@
 		4B2D454E176CF84E003AA274 /* DownloadedFonts.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4B2D454D176CF84E003AA274 /* DownloadedFonts.plist */; };
 		4B2D4553176CFA16003AA274 /* SystemFonts.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4B2D4552176CFA16003AA274 /* SystemFonts.plist */; };
 		4B2D4557176D01E7003AA274 /* JNTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B2D4556176D01E7003AA274 /* JNTextViewController.m */; };
+		4B2D455D176D6C27003AA274 /* UIFont+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B2D455C176D6C27003AA274 /* UIFont+Additions.m */; };
+		4B2D4561176D6F4C003AA274 /* JNFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B2D4560176D6F4C003AA274 /* JNFont.m */; };
 		4BAF50B5176CE500008697B7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BAF50B4176CE500008697B7 /* UIKit.framework */; };
 		4BAF50B7176CE500008697B7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BAF50B6176CE500008697B7 /* Foundation.framework */; };
 		4BAF50B9176CE500008697B7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BAF50B8176CE500008697B7 /* CoreGraphics.framework */; };
@@ -33,6 +35,10 @@
 		4B2D4554176CFD1F003AA274 /* JNConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JNConstants.h; sourceTree = "<group>"; };
 		4B2D4555176D01E7003AA274 /* JNTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JNTextViewController.h; sourceTree = "<group>"; };
 		4B2D4556176D01E7003AA274 /* JNTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JNTextViewController.m; sourceTree = "<group>"; };
+		4B2D455B176D6C27003AA274 /* UIFont+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+Additions.h"; sourceTree = "<group>"; };
+		4B2D455C176D6C27003AA274 /* UIFont+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+Additions.m"; sourceTree = "<group>"; };
+		4B2D455F176D6F4C003AA274 /* JNFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JNFont.h; sourceTree = "<group>"; };
+		4B2D4560176D6F4C003AA274 /* JNFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JNFont.m; sourceTree = "<group>"; };
 		4BAF50B1176CE500008697B7 /* DownloadedFontRegistration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DownloadedFontRegistration.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BAF50B4176CE500008697B7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		4BAF50B6176CE500008697B7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -83,6 +89,24 @@
 				4B2D4552176CFA16003AA274 /* SystemFonts.plist */,
 			);
 			name = Plists;
+			sourceTree = "<group>";
+		};
+		4B2D455A176D6BF4003AA274 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				4B2D455B176D6C27003AA274 /* UIFont+Additions.h */,
+				4B2D455C176D6C27003AA274 /* UIFont+Additions.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		4B2D455E176D6F0F003AA274 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4B2D455F176D6F4C003AA274 /* JNFont.h */,
+				4B2D4560176D6F4C003AA274 /* JNFont.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 		4BAF50A8176CE500008697B7 = {
@@ -143,6 +167,8 @@
 				4B2D4554176CFD1F003AA274 /* JNConstants.h */,
 				4BAF50D8176CE5CF008697B7 /* MainStoryboard.storyboard */,
 				4B2D4558176D63CF003AA274 /* Controllers */,
+				4B2D455E176D6F0F003AA274 /* Models */,
+				4B2D455A176D6BF4003AA274 /* Categories */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -264,6 +290,8 @@
 				4BAF50F0176CE656008697B7 /* main.m in Sources */,
 				4B2D454C176CEFD1003AA274 /* JNTableViewController.m in Sources */,
 				4B2D4557176D01E7003AA274 /* JNTextViewController.m in Sources */,
+				4B2D455D176D6C27003AA274 /* UIFont+Additions.m in Sources */,
+				4B2D4561176D6F4C003AA274 /* JNFont.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

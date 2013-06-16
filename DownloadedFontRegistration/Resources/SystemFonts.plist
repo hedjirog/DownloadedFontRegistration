@@ -3,15 +3,15 @@
 <plist version="1.0">
 <array>
 	<dict>
-		<key>Name</key>
+		<key>name</key>
 		<string>HiraKakuProN-W3</string>
-		<key>Display Name</key>
+		<key>display_name</key>
 		<string>Hiragino Kaku Gothic ProN</string>
 	</dict>
 	<dict>
-		<key>Display Name</key>
+		<key>display_name</key>
 		<string>Hiragino Mincho ProN</string>
-		<key>Name</key>
+		<key>name</key>
 		<string>HiraMinProN-W3</string>
 	</dict>
 </array>

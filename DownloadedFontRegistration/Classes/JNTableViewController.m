@@ -9,6 +9,9 @@
 #import "JNTableViewController.h"
 
 #import "JNTextViewController.h"
+#import "JNFont.h"
+
+#import "UIFont+Additions.h"
 
 @interface JNTableViewController ()
 
@@ -24,18 +27,14 @@
     NSIndexPath *selectedIndexPath = [self.tableView indexPathForSelectedRow];
 
     if ([segue.identifier isEqualToString:kDownloadedFontPushSegueIdentifier]) {
-        NSString *fontDisplayName = [self.downloadedFonts objectAtIndex:selectedIndexPath.row][ @"Display Name" ];
-        NSString *fontName = [self.downloadedFonts objectAtIndex:selectedIndexPath.row][ @"Name" ];
+        JNFont *downloadedFont = [[JNFont alloc] initWithDictionary:[self.downloadedFonts objectAtIndex:selectedIndexPath.row]];
 
-        [(JNTextViewController *)segue.destinationViewController setFontDisplayName:fontDisplayName];
-        [(JNTextViewController *)segue.destinationViewController setFontName:fontName];
+        [(JNTextViewController *)segue.destinationViewController setFont:downloadedFont];
     }
     else if ([segue.identifier isEqualToString:kSystemFontPushSegueIdentifier]) {
-        NSString *fontDisplayName = [self.systemFonts objectAtIndex:selectedIndexPath.row][ @"Display Name" ];
-        NSString *fontName = [self.systemFonts objectAtIndex:selectedIndexPath.row][ @"Name" ];
-
-        [(JNTextViewController *)segue.destinationViewController setFontDisplayName:fontDisplayName];
-        [(JNTextViewController *)segue.destinationViewController setFontName:fontName];
+        JNFont *systemFont = [[JNFont alloc] initWithDictionary:[self.systemFonts objectAtIndex:selectedIndexPath.row]];
+        
+        [(JNTextViewController *)segue.destinationViewController setFont:systemFont];
     }
 }
 
@@ -114,10 +113,15 @@
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath
 {
     if (indexPath.section == 0) {
-        cell.textLabel.text = [self.downloadedFonts objectAtIndex:indexPath.row][ @"Display Name" ];
+        JNFont *downloadedFont = [[JNFont alloc] initWithDictionary:[self.downloadedFonts objectAtIndex:indexPath.row]];
+
+        cell.textLabel.text = downloadedFont.displayName;
+        cell.detailTextLabel.text = ([UIFont fontExistsOfName:downloadedFont.name]) ? @"Avalable" : @"Required to download";
     }
     if (indexPath.section == 1) {
-        cell.textLabel.text = [self.systemFonts objectAtIndex:indexPath.row][ @"Display Name" ];
+        JNFont *systemFont = [[JNFont alloc] initWithDictionary:[self.systemFonts objectAtIndex:indexPath.row]];
+        
+        cell.textLabel.text = systemFont.displayName;
     }
 }
 

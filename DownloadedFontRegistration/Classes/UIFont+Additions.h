@@ -1,5 +1,5 @@
 //
-//  JNTextViewController.h
+//  UIFont+Additions.h
 //  DownloadedFontRegistration
 //
 //  Created by Jiro Nagashima on 6/16/13.
@@ -8,10 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@class JNFont;
+@interface UIFont (Additions)
 
-@interface JNTextViewController : UIViewController
-
-@property (nonatomic, copy) JNFont *font;
++ (BOOL)fontExistsOfName:(NSString *)fontName;
 
 @end

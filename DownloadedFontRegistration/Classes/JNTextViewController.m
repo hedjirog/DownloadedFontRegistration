@@ -8,6 +8,10 @@
 
 #import "JNTextViewController.h"
 
+#import "JNFont.h"
+
+#import "UIFont+Additions.h"
+
 @interface JNTextViewController ()
 
 @property (nonatomic, weak) IBOutlet UITextView *textView;
@@ -20,8 +24,14 @@
 {
     [super viewDidLoad];
 
-    self.title = self.fontDisplayName;
-    self.textView.font = [UIFont fontWithName:self.fontName size:16];
+    self.title = self.font.displayName;
+
+    if ([UIFont fontExistsOfName:self.font.name]) {
+        self.textView.font = [UIFont fontWithName:self.font.name size:16];
+    }
+    else {
+        // Download a font
+    }
 }
 
 @end

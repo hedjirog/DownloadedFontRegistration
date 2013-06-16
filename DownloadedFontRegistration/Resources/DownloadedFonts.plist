@@ -3,9 +3,11 @@
 <plist version="1.0">
 <array>
 	<dict>
-		<key>Display Name</key>
+		<key>download_url</key>
+		<string>http://sourceforge.jp/projects/vlgothic/downloads/58961/VLGothic-20130607.zip/</string>
+		<key>display_name</key>
 		<string>VL Gothic</string>
-		<key>Name</key>
+		<key>name</key>
 		<string>VL-Gothic-Regular</string>
 	</dict>
 </array>
