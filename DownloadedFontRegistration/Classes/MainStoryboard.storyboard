@@ -1,26 +1,166 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2519" systemVersion="12A206j" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="r1x-7A-gq5">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1856"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier View Controller-->
-        <scene sceneID="5">
+        <!--Table View Controller - Fonts-->
+        <scene sceneID="yhG-yf-gs7">
             <objects>
-                <viewController id="2" customClass="JNViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="3">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+                <tableViewController id="jhX-l7-LUi" customClass="JNTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="QLj-K0-0BF">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="DownloadedFontCell" textLabel="8Kf-c7-uOS" detailTextLabel="fPh-j8-JcQ" style="IBUITableViewCellStyleSubtitle" id="z3o-ce-mGy">
+                                <rect key="frame" x="0.0" y="46" width="320" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="10" y="1" width="280" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Font Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Kf-c7-uOS">
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="status" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fPh-j8-JcQ">
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <connections>
+                                    <segue destination="LHA-yR-oFp" kind="push" identifier="DownloadedFontPushSegue" id="oyV-eP-M8l"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SystemFontCell" textLabel="OQI-dM-fuB" style="IBUITableViewCellStyleDefault" id="7t0-vR-cLu">
+                                <rect key="frame" x="0.0" y="91" width="320" height="45"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="10" y="0.0" width="280" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Font Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OQI-dM-fuB">
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <connections>
+                                    <segue destination="LHA-yR-oFp" kind="push" identifier="SystemFontPushSegue" id="na8-T9-v29"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Fonts" id="4ql-a3-1Ns"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hcz-eC-deI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="276" y="37"/>
+        </scene>
+        <!--Text View Controller-->
+        <scene sceneID="Bzt-MU-U9a">
+            <objects>
+                <viewController id="LHA-yR-oFp" customClass="JNTextViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MTA-Ge-Ha9">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cJo-Hy-7aM">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">雨ニモマケズ
+風ニモマケズ
+雪ニモ夏ノ暑サニモマケヌ
+丈夫ナカラダヲモチ
+慾ハナク
+決シテ瞋ラズ
+イツモシヅカニワラッテヰル
+一日ニ玄米四合ト
+味噌ト少シノ野菜ヲタベ
+アラユルコトヲ
+ジブンヲカンジョウニ入レズニ
+ヨクミキキシワカリ
+ソシテワスレズ
+野原ノ松ノ林ノノ
+小サナ萓ブキノ小屋ニヰテ
+東ニ病気ノコドモアレバ
+行ッテ看病シテヤリ
+西ニツカレタ母アレバ
+行ッテソノ稲ノ朿ヲ負ヒ
+南ニ死ニサウナ人アレバ
+行ッテコハガラナクテモイヽトイヒ
+北ニケンクヮヤソショウガアレバ
+ツマラナイカラヤメロトイヒ
+ヒドリノトキハナミダヲナガシ
+サムサノナツハオロオロアルキ
+ミンナニデクノボートヨバレ
+ホメラレモセズ
+クニモサレズ
+サウイフモノニ
+ワタシハナリタイ</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cJo-Hy-7aM" firstAttribute="trailing" secondItem="MTA-Ge-Ha9" secondAttribute="trailing" type="default" id="QbG-AN-gl9"/>
+                            <constraint firstItem="cJo-Hy-7aM" firstAttribute="bottom" secondItem="MTA-Ge-Ha9" secondAttribute="bottom" type="default" id="Szj-aq-KWJ"/>
+                            <constraint firstItem="cJo-Hy-7aM" firstAttribute="leading" secondItem="MTA-Ge-Ha9" secondAttribute="leading" type="default" id="aZP-sd-Q0r"/>
+                            <constraint firstItem="cJo-Hy-7aM" firstAttribute="top" secondItem="MTA-Ge-Ha9" secondAttribute="top" type="default" id="rCn-MK-TSn"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="dpQ-g4-pGA"/>
+                    <connections>
+                        <outlet property="textView" destination="cJo-Hy-7aM" id="QkE-yv-yrH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BtR-qF-KTC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="795" y="37"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Oay-Fg-QIb">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="r1x-7A-gq5" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="TxQ-X2-e5c">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="jhX-l7-LUi" kind="relationship" relationship="rootViewController" id="NbV-OR-IaQ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sWt-wa-rmy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-258" y="37"/>
         </scene>
     </scenes>
+    <classes>
+        <class className="JNTableViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/JNTableViewController.h"/>
+        </class>
+        <class className="JNTextViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/JNTextViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="textView" candidateClass="UITextView"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="na8-T9-v29"/>
+    </inferredMetricsTieBreakers>
 </document>
