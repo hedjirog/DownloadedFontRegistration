@@ -13,6 +13,9 @@
 		4B2D4557176D01E7003AA274 /* JNTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B2D4556176D01E7003AA274 /* JNTextViewController.m */; };
 		4B2D455D176D6C27003AA274 /* UIFont+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B2D455C176D6C27003AA274 /* UIFont+Additions.m */; };
 		4B2D4561176D6F4C003AA274 /* JNFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B2D4560176D6F4C003AA274 /* JNFont.m */; };
+		4B2D4564176D8D03003AA274 /* JNDownloadRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B2D4563176D8D02003AA274 /* JNDownloadRequestOperation.m */; };
+		4B2D4567176D97B0003AA274 /* JNUnzipManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B2D4566176D97B0003AA274 /* JNUnzipManager.m */; };
+		4B2D4569176DA7B4003AA274 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B2D4568176DA7B3003AA274 /* CoreText.framework */; };
 		4BAF50B5176CE500008697B7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BAF50B4176CE500008697B7 /* UIKit.framework */; };
 		4BAF50B7176CE500008697B7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BAF50B6176CE500008697B7 /* Foundation.framework */; };
 		4BAF50B9176CE500008697B7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BAF50B8176CE500008697B7 /* CoreGraphics.framework */; };
@@ -39,6 +42,11 @@
 		4B2D455C176D6C27003AA274 /* UIFont+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+Additions.m"; sourceTree = "<group>"; };
 		4B2D455F176D6F4C003AA274 /* JNFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JNFont.h; sourceTree = "<group>"; };
 		4B2D4560176D6F4C003AA274 /* JNFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JNFont.m; sourceTree = "<group>"; };
+		4B2D4562176D8D02003AA274 /* JNDownloadRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JNDownloadRequestOperation.h; sourceTree = "<group>"; };
+		4B2D4563176D8D02003AA274 /* JNDownloadRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JNDownloadRequestOperation.m; sourceTree = "<group>"; };
+		4B2D4565176D97B0003AA274 /* JNUnzipManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JNUnzipManager.h; sourceTree = "<group>"; };
+		4B2D4566176D97B0003AA274 /* JNUnzipManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JNUnzipManager.m; sourceTree = "<group>"; };
+		4B2D4568176DA7B3003AA274 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		4BAF50B1176CE500008697B7 /* DownloadedFontRegistration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DownloadedFontRegistration.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BAF50B4176CE500008697B7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		4BAF50B6176CE500008697B7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -64,6 +72,7 @@
 				4BAF50B5176CE500008697B7 /* UIKit.framework in Frameworks */,
 				4BAF50B7176CE500008697B7 /* Foundation.framework in Frameworks */,
 				4BAF50B9176CE500008697B7 /* CoreGraphics.framework in Frameworks */,
+				4B2D4569176DA7B4003AA274 /* CoreText.framework in Frameworks */,
 				F6FC71E26ABE44AB93E2D2C6 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -105,6 +114,10 @@
 			children = (
 				4B2D455F176D6F4C003AA274 /* JNFont.h */,
 				4B2D4560176D6F4C003AA274 /* JNFont.m */,
+				4B2D4562176D8D02003AA274 /* JNDownloadRequestOperation.h */,
+				4B2D4563176D8D02003AA274 /* JNDownloadRequestOperation.m */,
+				4B2D4565176D97B0003AA274 /* JNUnzipManager.h */,
+				4B2D4566176D97B0003AA274 /* JNUnzipManager.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -133,6 +146,7 @@
 				4BAF50B4176CE500008697B7 /* UIKit.framework */,
 				4BAF50B6176CE500008697B7 /* Foundation.framework */,
 				4BAF50B8176CE500008697B7 /* CoreGraphics.framework */,
+				4B2D4568176DA7B3003AA274 /* CoreText.framework */,
 				45F6074048964165B1EFFF35 /* libPods.a */,
 			);
 			name = Frameworks;
@@ -292,6 +306,8 @@
 				4B2D4557176D01E7003AA274 /* JNTextViewController.m in Sources */,
 				4B2D455D176D6C27003AA274 /* UIFont+Additions.m in Sources */,
 				4B2D4561176D6F4C003AA274 /* JNFont.m in Sources */,
+				4B2D4564176D8D03003AA274 /* JNDownloadRequestOperation.m in Sources */,
+				4B2D4567176D97B0003AA274 /* JNUnzipManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -22,6 +22,15 @@
 
 @implementation JNTableViewController
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+
+    for (UITableViewCell *cell in [self.tableView visibleCells]) {
+        [self configureCell:cell atIndexPath:[self.tableView indexPathForCell:cell]];
+    }
+}
+
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     NSIndexPath *selectedIndexPath = [self.tableView indexPathForSelectedRow];

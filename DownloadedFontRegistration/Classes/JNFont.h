@@ -13,7 +13,11 @@
 @property (nonatomic, copy, readonly) NSString *displayName;
 @property (nonatomic, copy, readonly) NSString *name;
 @property (nonatomic, copy, readonly) NSURL *downloadURL;
+@property (nonatomic, copy, readonly) NSString *unzippedDir;
+@property (nonatomic, copy, readonly) NSString *unzippedFile;
 
 - (id)initWithDictionary:(NSDictionary *)dictionary;
+
+- (BOOL)registerDownloadedFile;
 
 @end

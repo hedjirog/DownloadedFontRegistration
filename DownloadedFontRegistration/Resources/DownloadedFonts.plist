@@ -3,12 +3,16 @@
 <plist version="1.0">
 <array>
 	<dict>
-		<key>download_url</key>
-		<string>http://sourceforge.jp/projects/vlgothic/downloads/58961/VLGothic-20130607.zip/</string>
 		<key>display_name</key>
-		<string>VL Gothic</string>
+		<string>りいてがき筆</string>
 		<key>name</key>
-		<string>VL-Gothic-Regular</string>
+		<string>RiiTegakiFude</string>
+		<key>download_url</key>
+		<string>http://www.kcc.zaq.ne.jp/in-mlg/freefont/riitf/riitf.zip</string>
+		<key>unzipped_dir</key>
+		<string>riitf</string>
+		<key>unzipped_file</key>
+		<string>RiiT_F.otf</string>
 	</dict>
 </array>
 </plist>

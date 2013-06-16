@@ -5,3 +5,6 @@
 // Segues
 #define kDownloadedFontPushSegueIdentifier  @"DownloadedFontPushSegue"
 #define kSystemFontPushSegueIdentifier      @"SystemFontPushSegue"
+
+// Dirs
+#define kFontsDirectoryName @"Fonts"
