@@ -4,6 +4,12 @@ DownloadedFontRegistration
 A sample iOS app to register downloaded fonts
 
 
+## Build Requirements
+
+* Xcode 4.5+
+* CocoaPods
+
+
 ## Screenshots
 
 ![ScreenShot1](https://raw.github.com/hedjirog/DownloadedFontRegistration/master/DownloadedFontRegistration/Resources/Screenshots/Screenshot1.png)
